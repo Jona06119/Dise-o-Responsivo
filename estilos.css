@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;             
+}
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh; /*minimo de su altura*/
+    background-color: rgb(35, 31, 31);
+    color: white;
+    font-size: 3rem; 
+    display: flex; /*va por fila los elementos*/
+    gap: 20px; /*espacio para cada elemnto*/
+    flex-wrap: wrap; /*esta linea de codigo permite que los elementos que no se vean se pasen 
+    hacia abajo*/
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white; /*se le agrega borde completo con (solid) y color */
+    display: flex; 
+    justify-content: center; /*22 y 23 es para centrar los elementos en este caso los numeros*/
+}
+
+@media (min-width:1024px){ /*es para darle tamaño o se adapte a cualquier dispositivo*/
+    .card{
+        color: rgb(59, 6, 108);
+        background-color: rgb(38, 13, 137);
+    }
+}
+
